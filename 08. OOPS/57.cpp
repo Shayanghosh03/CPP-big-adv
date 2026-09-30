@@ -28,5 +28,8 @@ class User {
 
 int main() {
     Student s1;
+    s1.name = "Shayan Ghosh";
+
+    cout << s1.name << endl;  
     return 0;
 }
