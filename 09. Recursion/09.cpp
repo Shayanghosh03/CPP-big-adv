@@ -26,6 +26,6 @@ int main() {
     vector<int> map(26, false);
 
     removeDuplicate(str, ans, 0, map);
-
+    
     return 0;
 }
