@@ -15,7 +15,7 @@ int main() {
         absDiff += abs(a[i] - b[i]);
     }
 
-    cout << "Minimum AbsDiff is => " << absDiff << endl;
+    cout << "Sum of Minimum AbsDiff is => " << absDiff << endl;
     
     return 0;
 }

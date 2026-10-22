@@ -41,7 +41,7 @@ int main() {
 
     int ans = fractionalKnapsack(val, wt, w);
 
-    cout << "Answer is => " << ans << endl;
+    cout << "Answer is => " << ans << endl; 
 
     return 0;
 }

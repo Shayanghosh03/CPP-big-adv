@@ -1,4 +1,5 @@
 #include<iostream>
+#include<stack>
 #include<queue>
 using namespace std;
 
@@ -7,10 +8,6 @@ class Deque {
 public:
     void push_back(int data) {
         q.push(data);
-    }
-
-    void pop_front() {
-        q.pop();
     }
 
     int front() {
