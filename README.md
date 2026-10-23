@@ -1,4 +1,4 @@
-# C++ DSA Practice
+# C++ DSA Big to Adv
 
 A collection of C++ programs covering the fundamentals of C++, data structures, algorithms, and object-oriented programming.
 
