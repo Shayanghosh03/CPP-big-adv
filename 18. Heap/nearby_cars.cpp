@@ -41,7 +41,7 @@ int main() {
     pos.push_back(make_pair(-2, 4));
 
     // Total time complexity = O(n) + O(k*long*n)
-    int k = 2;
+    int k = 2; // Nearest 2 cars
 
     nearByCars(pos, k);
 

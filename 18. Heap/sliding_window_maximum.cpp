@@ -13,7 +13,7 @@ void slidongWindowMax(vector<int> arr, int k) {
     ans.push_back(pq.top().first);
 
     for(int i = k; i < arr.size(); i++) {
-        if(!pq.empty() && pq.top().second <= (i - k)) {
+        while(!pq.empty() && pq.top().second <= (i - k)) {
             pq.pop();
         }
         pq.push(make_pair(arr[i], i));

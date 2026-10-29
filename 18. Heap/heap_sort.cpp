@@ -2,7 +2,7 @@
 #include<vector>
 using namespace std;
 
-void heapify(int parIdx, vector<int> &arr, int n) {
+void heapify(int parIdx, vector<int> &arr, int n) { // O(n)
     int leftIdx = 2 * parIdx + 1;
     int rightIdx = 2 * parIdx + 2;
 
@@ -25,12 +25,12 @@ void heapSort(vector<int> &arr) {
     int n = arr.size();
 
     // Step 1 => build max heap
-    for(int i = n/2 - 1; i >= 0; i--) {
+    for(int i = n/2 - 1; i >= 0; i--) { // O(nlogn)
         heapify(i, arr, n);
     }
 
     // Step 2 => taking els to correct pos
-    for(int i = n - 1; i >= 0; i--) {
+    for(int i = n - 1; i >= 0; i--) { // O(nlongn)
         swap(arr[0], arr[i]);
         heapify(0, arr, i);
     }
