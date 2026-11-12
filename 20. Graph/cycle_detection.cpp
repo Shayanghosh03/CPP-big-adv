@@ -31,7 +31,7 @@ public:
         }
     }
 
-    bool isCycleHelper(int src, int par, vector<bool> &vis) {
+    bool isCycleHelper(int src, int par, vector<bool> &vis) { // Using DFS
         vis[src] = true;
         list<int> neighbour = l[src];
 
@@ -51,7 +51,7 @@ public:
 
     bool isCycleUndir() {
         vector<bool> vis(v, false);
-        return isCycleHelper(0, -1, vis);
+        return isCycleHelper(0, -1, vis); // parent
     }
 
 };
