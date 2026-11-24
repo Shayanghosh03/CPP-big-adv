@@ -38,6 +38,20 @@ int countWayDP2(int n) { // O(n)
     return dp[n];
 }
 
+// Using Tabulation in 1, 2 & 3 Climbs
+int countWayDP3(int n) { // O(n)
+    vector<int> dp(n + 1, -1);
+    dp[0] = 1;
+    dp[1] = 1;
+    dp[2] = 2;
+
+    for(int i = 3; i < dp.size(); i++) {
+        dp[i] = dp[i - 1] + dp[i - 2] + dp[i - 3];
+    }
+
+    return dp[n];
+}
+
 int main() {
     int n = 5;
 
@@ -47,6 +61,8 @@ int main() {
     cout << countWayDP(n, dp) << endl;
 
     cout << countWayDP2(n) << endl;
+
+    cout << countWayDP3(n) << endl;
 
     return 0;
 }
