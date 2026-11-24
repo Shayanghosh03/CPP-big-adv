@@ -10,7 +10,7 @@ int fib(int n) { // O(log(n))
     return fib(n-1) + fib(n-2);
 }
 
-// DP -> Memoization
+// DP -> Memoization (Top Down Approach)
 int fibDP(int n, vector<int>& f) { // O(n)
     if(n == 1 || n == 0) {
         return n;
@@ -23,7 +23,7 @@ int fibDP(int n, vector<int>& f) { // O(n)
     f[n] = fibDP(n-1, f) + fibDP(n-2, f);
 }
 
-// DP -> Tabulation
+// DP -> Tabulation (Bottom up Approach)
 int fibDP2(int n) {
     vector<int> f(n+1, -1);
     f[0] = 0;
