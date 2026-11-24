@@ -25,6 +25,10 @@ The source files are organized by topic, and each file uses a descriptive name b
 | `15. Greedy Algorithm` | Activity selection, fractional knapsack, coin change, chain length, and job sequencing |
 | `16. Binary Tree` | Traversals, tree properties, subtree checks, top view, levels, and lowest common ancestor |
 | `17. Binary Search Tree` | BST traversal and key searching |
+| `18. Heap` | Heap operations, heap sort, priority queues, and related problems |
+| `19. Hashing` | Hash tables, maps, sets, pair sums, and subarray problems |
+| `20. Graph` | Graph traversal, path and cycle detection, shortest paths, and topological sorting |
+| `21. Dynamic Programming` | 0-1 knapsack, climbing stairs, and Fibonacci |
 
 ## Repository Structure
 
@@ -47,6 +51,10 @@ CPP-big-adv/
 ├── 15. Greedy Algorithm/
 ├── 16. Binary Tree/
 ├── 17. Binary Search Tree/
+├── 18. Heap/
+├── 19. Hashing/
+├── 20. Graph/
+├── 21. Dynamic Programming/
 └── README.md
 ```
 
@@ -60,6 +68,7 @@ Source files use descriptive `snake_case` names instead of numbered filenames. F
 13. Stack/next_greater_element.cpp
 16. Binary Tree/lowest_common_ancestor.cpp
 17. Binary Search Tree/search_in_bst.cpp
+21. Dynamic Programming/0-1_Knapsack.cpp
 ```
 
 This makes it easier to identify the purpose of a program without opening the file.
@@ -106,8 +115,9 @@ The folders are arranged from foundational concepts to more advanced algorithms:
 4. Object-oriented programming
 5. Recursion and backtracking
 6. Divide-and-conquer and greedy algorithms
-7. Linked lists, stacks, and queues
-8. Binary trees and binary search trees
+7. Linked lists, stacks, queues, and heaps
+8. Hashing and graphs
+9. Binary trees, binary search trees, and dynamic programming
 
 ## Notes
 
